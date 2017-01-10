@@ -51,6 +51,6 @@ COPY cmd.sh /sbin/cmd.sh
 RUN chmod 755 /sbin/cmd.sh
 COPY default /etc/nginx/sites-available/
 
-EXPOSE 80
+EXPOSE 80 443
 ENTRYPOINT ["/sbin/entrypoint.sh"]
 CMD ["/sbin/cmd.sh"]
